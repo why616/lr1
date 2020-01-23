@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>LR1文法分析</title>
+
+</head>
+<body>
+<script src="/js/jquery-1.12.0.min.js"></script>
+<link rel="stylesheet"  href="/css/bootstrap.css">
+<script src="/js/bootstrap.js"></script>
+<script src="/js/index.js"></script>
+<div style="padding: 60px 100px 10px;">
+    <form class="bs-example bs-example-form" role="form">
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon" id="src">输入串</span>
+            <input type="text" class="form-control" placeholder="i*i+i" id="in">
+        </div>
+    </form>
+</div>
+<div class="row">
+    <div class="col-lg-4">
+        <h1 class="text-primary" style="padding: 60px 100px 0px ">文法输入</h1>
+        <div style="padding: 1px 100px 10px;">
+            <form class="bs-example bs-example-form" role="form" id="wfin" action="./ll1Analyze" method="post">
+                <div class="input-group" id="div0">
+                    <input type="text" class="form-control" placeholder="E" id="0" name="0">
+                    <span class="input-group-addon">- ></span>
+                    <input type="text" class="form-control" placeholder="TE"id="01" name="01">
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div class="col-lg-8" style="padding: 55px 0px 0px" id="result">
+        <h1 class="text-primary" style="display: none">分析结果</h1>
+    </div>
+</div>
+<div style="padding: 100px" class="row">
+    <div class="col-lg-3">
+        <input type="submit" class="btn-lg btn-primary" style="position:absolute;bottom:0;" id="btn" value="提交!">
+    </div>
+    <div class="col-lg-9" id="result2">
+        <h1 class="text-primary" style="display: none">分析表</h1>
+    </div>
+
+</div>
+
+
+</body>
+</html>
